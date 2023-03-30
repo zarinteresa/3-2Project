@@ -8,6 +8,7 @@ if(isset($_GET['deleteid'])){
     $result=mysqli_query($conn,$query);
     if($result){
         header('location:order.php');
+        
     }
     else{
         die(mysqli_error($conn));
