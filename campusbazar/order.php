@@ -52,7 +52,7 @@ include("connection.php");
               <td> <?php echo $row['c_address']; ?></td>
               <td> <?php echo $row['c_phone']; ?></td>
               <td><button class="btn btn-success"><a href="#" class="text-light">Accept</a></button>
-              <button class="btn btn-danger"><a href="delete_order.php? deleteid='.$c_id.'"  class="text-light">Delete</a></button>
+              <button class="btn btn-danger"><a href="delete_order.php? deleteid=<?php echo $row['c_id']; ?>"  class="text-light">Delete</a></button>
                 </td>
               </tr>
               <?php 
@@ -90,7 +90,7 @@ include("connection.php");
               <td> <?php echo $row['mob_type']; ?></td>
               <td> <?php echo $row['trans_no']; ?></td>
               <td><button class="btn btn-success"><a href="#" class="text-light">Accept</a></button>
-              <button class="btn btn-danger"><a href="#" class="text-light">Reject</a></button>
+              <button class="btn btn-danger"><a href="#" class="text-light">Delete</a></button>
                 </td>
              
               </tr>
